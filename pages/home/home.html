@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>A Generic Body Mass Index Calculator</h1>
+  <p>
+     BMI or Body Mass Index is an indicator to determine how fit a person is depending on your weight in relation to your hight.
+    
+  </p>
+  <p>
+    Fill in the blanks to determine your BMI and to know if you need to excercise
+
+  </p>
+  <ion-item>
+    <ion-label> Height in Meters: </ion-label>
+    <ion-input type="number" [(ngModel)]="height"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+    <ion-label> Weight in Kilograms: </ion-label>
+    <ion-input type="number" [(ngModel)]="weight"></ion-input>
+    </ion-item>
+ <button ion-button color="primary" (click)="calculateBMI()">Whats my BMI?</button>
+
+ <ion-item *ngIf="bmi">
+   <h2>Your BMI is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
+   </ion-item>

@@ -1,0 +1,11 @@
+ion-content {
+   background: linear-gradient(to bottom, #bbebf3, #1cefff, #0052d4);
+}
+h2 {
+  color:black
+}
+
+p {
+  font-family:'Courier New', Courier, monospace;
+  text-align: justify;
+}
